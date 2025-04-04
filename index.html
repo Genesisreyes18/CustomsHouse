@@ -74,6 +74,11 @@
       color: #444;
       margin-bottom: 2rem;
     }
+    .overview h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
     .book-btn {
       background-color: #1c1c1c;
       color: #fff;
@@ -83,6 +88,8 @@
       font-size: 1.2rem;
       font-weight: bold;
       cursor: pointer;
+      text-decoration: none;
+      display: block;
     }
     .book-btn:hover {
       background-color: #333;
@@ -91,27 +98,28 @@
       margin-top: 2rem;
       text-align: center;
     }
+
     @media (min-width: 768px) {
-  body {
-    padding: 2rem 4rem;
-    max-width: 800px;
-    margin: 0 auto;
-  }
+      body {
+        padding: 2rem 4rem;
+        max-width: 800px;
+        margin: 0 auto;
+      }
 
-  .card img {
-    border-radius: 1rem 1rem 0 0;
-  }
+      .card img {
+        border-radius: 1rem 1rem 0 0;
+      }
 
-  .location {
-    top: -2.5rem;
-    width: 80%;
-  }
+      .location {
+        top: -2.5rem;
+        width: 80%;
+      }
 
-  .book-btn {
-    max-width: 300px;
-    margin: auto;
-  }
-}
+      .book-btn {
+        max-width: 300px;
+        margin: auto;
+      }
+    }
   </style>
 </head>
 <body>
@@ -135,9 +143,13 @@
     <div class="overview">
       <p><strong>⏰</strong> Opens from 7 a.m. to 10 p.m.</p>
     </div>
-    <div class="book-btn" onclick="alert('Booking confirmed!')">
-      Book Now
+    <div class="overview">
+      <h3>Overview</h3>
+      <p>This is where we can write the story of the Customs House. Talk about its history, why it's important, the process of rebuilding it, or the community effort behind it. You can include anything that helps visitors appreciate the meaning and context of this space.</p>
     </div>
+    <a href="https://app.simplymeet.me/studyroom/1743581476" target="_blank" class="book-btn">
+      Book Now
+    </a>
   </section>
 
   <footer>
